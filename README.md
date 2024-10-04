@@ -13,35 +13,40 @@ Credential Setup: For Windows instances, PowerShell will prompt for the credenti
 1. Property File (servers.properties)
 Create a property file named servers.properties in the same directory as the script. This file contains the IP addresses of your EC2 instances and the corresponding operating system type (linux or windows). Example format:
 
+```
 10.0.1.10=linux
 10.0.1.11=linux
 10.0.1.12=linux
 10.0.1.20=windows
 10.0.1.21=windows
+```
 
 2. Script Configuration
 Update the script with the path to your private key for SSH connections to Linux instances. This can be done by modifying the key_path variable:
 
-bash
+```
 key_path="~/.ssh/your-key.pem"
+```
+
 Ensure the key has proper access permissions:
 
-bash
+```
 chmod 400 ~/.ssh/your-key.pem
+```
+
 3. Script Permissions
 Make the script executable:
 
-bash
+```
 chmod +x get_hostnames.sh
-
+```
 
 ## Usage
 Run the script from your jumpbox with sudo or with an account that has sufficient permissions to read the hosts files on the remote instances:
 
-
-bash
+```
 sudo ./get_hostnames.sh
-
+```
 
 The script will:
 
