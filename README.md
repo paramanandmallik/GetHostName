@@ -1,4 +1,5 @@
-EC2 Hostname Fetcher Script
+#EC2 Hostname Fetcher Script
+
 This script is designed to fetch the custom hostnames from the /etc/hosts file on Linux EC2 instances and from the C:\Windows\System32\drivers\etc\hosts file on Windows EC2 instances. It uses a property file to specify the IP addresses and the corresponding operating system for each EC2 instance.
 
 Prerequisites
