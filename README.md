@@ -4,9 +4,9 @@ This script is designed to fetch the custom hostnames from the /etc/hosts file o
 It uses a property file to specify the IP addresses and the corresponding operating system for each EC2 instance.
 
 ## Prerequisites
-SSH Access: Ensure you have SSH access to the Linux instances and the private key for authentication.
-PowerShell Access: Ensure you have PowerShell installed and configured on your jumpbox for querying Windows instances.
-Credential Setup: For Windows instances, PowerShell will prompt for the credentials used to connect to the EC2 instances.
+### SSH Access: Ensure you have SSH access to the Linux instances and the private key for authentication.
+### PowerShell Access: Ensure you have PowerShell installed and configured on your jumpbox for querying Windows instances.
+### Credential Setup: For Windows instances, PowerShell will prompt for the credentials used to connect to the EC2 instances.
 
 ## Setup
 
